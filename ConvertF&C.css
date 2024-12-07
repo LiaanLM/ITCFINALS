@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.video-background {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-overlay {
+    padding: 4em 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-overlay h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.header-overlay p {
+    font-size: 1.2em;
+}
+
+/* Main Content Styles */
+.container {
+    padding: 2em 1em;
+}
+
+.converter-section {
+    margin-bottom: 2em;
+}
+
+.converter-section h2 {
+    font-size: 1.8em;
+    color: #3498db;
+    margin-bottom: 1em;
+}
+
+.converter {
+    margin: 1em 0;
+}
+
+.converter label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.converter input {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.converter button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #2980b9;
+}
+
+.converter p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer .return-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.footer .return-link:hover {
+    text-decoration: underline;
+}

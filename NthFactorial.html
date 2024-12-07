@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding N</title>
+    <link rel="stylesheet" href="NthFactorial.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Click to solve for N</h1>
+            <p>Select a loop to find the result for N</p>
+        </header>
+
+        <section class="operation-selection">
+            <div class="operation" onclick="showTable('factorial')">
+                <p>While Loop</p>
+            </div>
+            
+            <div class="operation" onclick="showTable('average')">
+                <p>For Loop</p>
+            </div>
+            <div class="operation" onclick="showTable('sum')">
+                <p>Do-While Loop</p>
+            </div>
+        </section>
+
+        <table id="operationTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>Operation</th>
+                    <th>Input (n)</th>
+                    <th>Result</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="operationName">--</td>
+                    <td>
+                        <input type="number" id="inputN" placeholder="Enter a number">
+                    </td>
+                    <td id="result">--</td>
+                    <td>
+                        <button onclick="performOperation()">Calculate</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>Go back to the <a href="Selection.html" class="link">main page</a>.</p>
+        </div>
+
+        <video class="video-background" autoplay loop muted>
+            <source src="Mario.mp4" type="video/mp4">
+            <source src="Mario.webm" type="video/webm">
+            <source src="Mario.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <script src="NthFactorial.js"></script>
+</body>
+</html>

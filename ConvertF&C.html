@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature & Length Conversion</title>
+    <link rel="stylesheet" href="ConvertF&C.css">
+</head>
+<body>
+    <!-- Header with Background Video -->
+    <header class="header">
+        <video id="backgroundVideo" class="video-background" autoplay loop muted>
+            <source src="Pixel Animation - Ocean Wave Loop.mp4" type="video/mp4">
+            <source src="Pixel Animation - Ocean Wave Loop.webm" type="video/webm">
+            <source src="Pixel Animation - Ocean Wave Loop.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-overlay">
+            <h1>Conversion Tools</h1>
+            <p>Effortlessly convert temperature and length with our tools.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Temperature Converter Section -->
+        <section class="converter-section">
+            <h2>Temperature Converter</h2>
+            <div class="converter">
+                <label for="celsius">Celsius:</label>
+                <input type="number" id="celsius" placeholder="Enter Celsius">
+                <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+                <p id="resultCelsius"></p>
+            </div>
+
+            <div class="converter">
+                <label for="fahrenheit">Fahrenheit:</label>
+                <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
+                <button onclick="convertToCelsius()">Convert to Celsius</button>
+                <p id="resultFahrenheit"></p>
+            </div>
+        </section>
+
+        <!-- Length Converter Section -->
+        <section class="converter-section">
+            <h2>Length Converter</h2>
+            <div class="converter">
+                <label for="meters">Meters:</label>
+                <input type="number" id="meters" placeholder="Enter Meters">
+                <button onclick="convertToFeet()">Convert to Feet</button>
+                <p id="resultMeters"></p>
+            </div>
+
+            <div class="converter">
+                <label for="feet">Feet:</label>
+                <input type="number" id="feet" placeholder="Enter Feet">
+                <button onclick="convertToMeters()">Convert to Meters</button>
+                <p id="resultFeet"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Return Link -->
+    <footer class="footer">
+        <p>Go back to the main page</p>
+        <a href="Selection.html" class="return-link">Return Now</a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="ConvertF&C.js"></script>
+</body>
+</html>

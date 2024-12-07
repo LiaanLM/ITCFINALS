@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management</title>
+    <link rel="stylesheet" href="PayRoll.css">
+</head>
+<body>
+    <header class="header">
+        <video id="backgroundVideo" class="video-background" autoplay loop muted>
+            <source src="Japan street live wallpaper.mp4" type="video/mp4">
+            <source src="Japan street live wallpaper.webm" type="video/webm">
+            <source src="Japan street live wallpaper.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-overlay">
+            <h1>Payroll Management</h1>
+            <p>Manage employee payroll with ease.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="payroll-section">
+            <h2>Employee Payroll</h2>
+
+            <!-- Employee Input Form -->
+            <div class="payroll-form">
+                <label for="employeeName">Employee Name:</label>
+                <input type="text" id="employeeName" placeholder="Enter employee name">
+
+                <label for="daysWorked">Days Worked:</label>
+                <input type="number" id="daysWorked" placeholder="Enter days worked">
+
+                <label for="dailyRate">Daily Rate:</label>
+                <input type="number" id="dailyRate" placeholder="Enter daily rate">
+
+                <label for="deduction">Deduction:</label>
+                <input type="number" id="deduction" placeholder="Enter deductions">
+
+                <button onclick="addEmployee()">Add Employee</button>
+            </div>
+
+            <!-- Payroll Table -->
+            <div class="payroll-table">
+                <table id="payrollTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Days Worked</th>
+                            <th>Daily Rate</th>
+                            <th>Gross Pay</th>
+                            <th>Deductions</th>
+                            <th>Net Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody id="payrollTableBody">
+                        <!-- Table rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <button onclick="clearPayroll()">Clear Payroll</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Go back to the main page</p>
+        <a href="Selection.html" class="return-link">Return Now</a>
+    </footer>
+
+    <script src="PayRoll.js"></script>
+</body>
+</html>
